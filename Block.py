@@ -11,8 +11,8 @@ class Block:
         self.y = y
         self.z = z
         self.mass = density * length * width * height
-        self.blocks_above = set()
-        self.blocks_under = set()
+        self.blocks_above = set()  # ¬се блоки, опирающиес€ на этот блок
+        self.blocks_under = set()  # ¬се блоки, на которые опираетс€ этот блок
         self.neighbour = set()  # —оседние блоки
         self.coef_cont = 0   # коэфициент площади соприкосновени€ с нижним блоком к площади нижней стороны блока
         self.square_under = 0   # площадь соприкосновени€ с нижними блоками
